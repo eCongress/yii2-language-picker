@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\languagepicker\widgets;
+namespace econgress\languagepicker\widgets;
 
 use Yii;
 use yii\helpers\Url;
@@ -13,36 +13,36 @@ use yii\helpers\Html;
  * Pre-defined button list:
  *
  * ~~~
- * \lajax\languagepicker\widgets\LanguagePicker::widget([
- *      'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_BUTTON,
- *      'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_SMALL
+ * \econgress\languagepicker\widgets\LanguagePicker::widget([
+ *      'skin' => \econgress\languagepicker\widgets\LanguagePicker::SKIN_BUTTON,
+ *      'size' => \econgress\languagepicker\widgets\LanguagePicker::SIZE_SMALL
  * ]);
  * ~~~
  *
  * Pre-defined DropDown list:
  *
  * ~~~
- *  \lajax\languagepicker\widgets\LanguagePicker::widget([
- *      'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
- *      'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
+ *  \econgress\languagepicker\widgets\LanguagePicker::widget([
+ *      'skin' => \econgress\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+ *      'size' => \econgress\languagepicker\widgets\LanguagePicker::SIZE_LARGE
  * ]);
  * ~~~
  *
  * Defining your own template:
  *
  * ~~~
- *  \lajax\languagepicker\widgets\LanguagePicker::widget([
+ *  \econgress\languagepicker\widgets\LanguagePicker::widget([
  *      'itemTemplate' => '<li><a href="{link}"><i class="{language}" title="{language}"></i> {name}</a></li>',
  *      'activeItemTemplate' => '<a href="{link}" title="{language}"><i class="{language}"></i> {name}</a>',
  *      'parentTemplate' => '<div class="language-picker dropdown-list {size}"><div>{activeItem}<ul>{items}</ul></div></div>',
  *
- *      'languageAsset' => 'lajax\languagepicker\bundles\LanguageLargeIconsAsset',      // StyleSheets
- *      'languagePluginAsset' => 'lajax\languagepicker\bundles\LanguagePluginAsset',    // JavasSripts
+ *      'languageAsset' => 'econgress\languagepicker\bundles\LanguageLargeIconsAsset',      // StyleSheets
+ *      'languagePluginAsset' => 'econgress\languagepicker\bundles\LanguagePluginAsset',    // JavasSripts
  * ]);
  * ~~~
  *
  *
- * @author Lajos Molnar <lajax.m@gmail.com>
+ * @author Lajos Molnar <econgress.m@gmail.com>
  *
  * @since 1.0
  */
@@ -88,8 +88,8 @@ class LanguagePicker extends \yii\base\Widget
      * @var array List of pre-defined skins.
      */
     private $_SIZES = [
-        self::SIZE_SMALL => 'lajax\languagepicker\bundles\LanguageSmallIconsAsset',
-        self::SIZE_LARGE => 'lajax\languagepicker\bundles\LanguageLargeIconsAsset',
+        self::SIZE_SMALL => 'econgress\languagepicker\bundles\LanguageSmallIconsAsset',
+        self::SIZE_LARGE => 'econgress\languagepicker\bundles\LanguageLargeIconsAsset',
     ];
 
     /**
@@ -126,7 +126,7 @@ class LanguagePicker extends \yii\base\Widget
      * @var string Adding JavaScript and its dependencies.
      * Changing languages is done through Ajax by default. If you do not wish to use Ajax, set value to null.
      */
-    public $languagePluginAsset = 'lajax\languagepicker\bundles\LanguagePluginAsset';
+    public $languagePluginAsset = 'econgress\languagepicker\bundles\LanguagePluginAsset';
 
     /**
      * @var array List of available languages.

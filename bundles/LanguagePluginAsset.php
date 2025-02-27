@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\languagepicker\bundles;
+namespace econgress\languagepicker\bundles;
 
 use yii\web\AssetBundle;
 
 /**
  * LanguagePlugin asset bundle
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <econgress.m@gmail.com>
  *
  * @since 1.0
  */
@@ -16,7 +16,7 @@ class LanguagePluginAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/lajax/yii2-language-picker/assets';
+    public $sourcePath = '@vendor/econgress/yii2-language-picker/assets';
 
     /**
      * @inheritdoc
