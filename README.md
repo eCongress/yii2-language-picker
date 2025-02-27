@@ -1,6 +1,10 @@
-# Yii2 Language Picker
+# Yii2 Language Picker (Fork)
+Este es un fork de [lajax/yii2-language-picker](https://github.com/lajax/yii2-language-picker), modificado por eCongress para:
+- Mejor compatibilidad con Bootstrap 5.
+- Nuevas opciones de configuración.
 
-Yii2 Language Picker Widget
+Para la documentación original, visita el [repositorio principal](https://github.com/lajax/yii2-language-picker).
+
 
 ## Introduction
 
@@ -8,6 +12,7 @@ The widget provides an easy to use language selector which makes it possible to 
 The language change can take place synchronously or asynchronously (through Ajax). The default method is asynchronous (through an Ajax call), however when this method fails for any reason (e.g. JavaScript is blocked on the client side) the new language will actualise synchronously through an automatic page reload.
 
 The language switcher is fully customisable. However, the pre-defined options provide a dropdown list (DropDownList), and a link-based list (ButtonList). Both versions can display the name of the chosen language and the corresponding flag (icon).
+
 
 ## Installation
 
