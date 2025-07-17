@@ -235,10 +235,10 @@ class Component extends \yii\base\Component
             ) {
                 $options['secure'] = true;
                 $options['sameSite'] = 'None';
-        }elseif (strpos(Yii::$app->request->referrer, 'embed') !== false) {
-            // Si no estás dentro de embed-apply, pero vienes desde allí, evita regenerar la cookie
-            return;
-        }
+            } elseif (Yii::$app->request->referrer !== null && str_contains(Yii::$app->request->referrer, 'embed')) {
+                // Si no estoy dentro de embed-apply, pero vengo desde allí, evita regenerar la cookie
+                return;
+            }
             
         $cookie = new \yii\web\Cookie($options);
         Yii::$app->response->cookies->add($cookie);
